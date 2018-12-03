@@ -11,3 +11,12 @@
 * Alter for 3.5" screen
 * Fixed icon scaling
 
+## To install:
+* copy git cloned files to RaspberryPi
+* unzip pywapi
+* cd to pywapi dir
+* python setup.py build
+* sudo -H python setup.py install
+* cd ..
+* sudo python weather.py
+
