@@ -1,7 +1,7 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 # Created : Sun 02 Dec 2018 10:13:29 PM EST
-# Modified: Mon 03 Dec 2018 11:47:47 AM EST
+# Modified: Mon 03 Dec 2018 01:37:49 PM EST
 ### BEGIN LICENSE
 #Copyright (c) 2014 Jim Kemp <kemp.jim@gmail.com>
 
@@ -379,7 +379,7 @@ class SmDisplay:
         txt = font.render(self.temps[0][0] + ' / ' + self.temps[0][1], True,
                           lc)
         (tx, ty) = txt.get_size()
-        self.screen.blit(txt, (xmax * wx - tx / 2, ymax * (wy + gp * 5)))
+        self.screen.blit(txt, ((xmax * wx - tx / 2) + 5, ymax * (wy + gp * 5))) # small tweek needed to x on 1st window
         #rtxt = font.render( 'Rain:', True, lc )
         #self.screen.blit( rtxt, (ro,ymax*(wy+gp*5)) )
         rptxt = rpfont.render(self.rain[0] + '%', True, lc)
